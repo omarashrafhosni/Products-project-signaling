@@ -50,6 +50,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Location mLastLocation;
     Marker mCurrLocationMarker;
     FusedLocationProviderClient mFusedLocationClient;
+    static double latitude;
+    static double longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +113,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Location location = locationList.get(locationList.size() - 1);
                 Log.i("MapsActivity", "Location: " + location.getLatitude() + " " + location.getLongitude());
                 mLastLocation = location;
+                latitude= location.getLatitude() ;
+                longitude= location.getLongitude();
                 if (mCurrLocationMarker != null) {
                     mCurrLocationMarker.remove();
                 }

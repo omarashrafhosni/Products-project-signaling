@@ -49,6 +49,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dip"
             android:text="Show me my current location" />
+        <Button
+            android:id="@+id/toproducts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:text="Go to products page" />
 
     </LinearLayout>
 
