@@ -18,14 +18,41 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:textSize="20sp"
-        android:layout_below="@id/textView2"
+        android:layout_below="@id/textView6"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
         android:text="Available in the following shops:"
         />
 
     <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/List"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
         android:layout_below="@id/textView3"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_below="@id/textView2"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner1"
+        android:gravity="left"
+        android:text="press on any item in the list to be able to save it and show its route"
+        android:textColor="@color/bg_main"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:textSize="15sp" />
 </RelativeLayout>

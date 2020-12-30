@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
         btnLogout = (Button) findViewById(R.id.btnLogout);
         Button locationbtn = (Button) findViewById((R.id.location));
         Button toproductsbtn= (Button) findViewById(R.id.toproducts);
-
+        Button savedproductsbtn= (Button) findViewById(R.id.savedproducts);
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
 
@@ -74,6 +74,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(MainActivity.this,products.class);
+                startActivity(intent);
+            }
+        });
+        savedproductsbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(MainActivity.this,savedproductslist.class);
                 startActivity(intent);
             }
         });

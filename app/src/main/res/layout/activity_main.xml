@@ -37,7 +37,7 @@
             android:id="@+id/btnLogout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dip"
+            android:layout_marginTop="20dip"
             android:background="@color/btn_logut_bg"
             android:text="@string/btn_logout"
             android:textAllCaps="false"
@@ -47,14 +47,20 @@
             android:id="@+id/location"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dip"
+            android:layout_marginTop="20dip"
             android:text="Show me my current location" />
         <Button
             android:id="@+id/toproducts"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dip"
+            android:layout_marginTop="20dip"
             android:text="Go to products page" />
+        <Button
+            android:id="@+id/savedproducts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="Go to Saved products page" />
 
     </LinearLayout>
 
